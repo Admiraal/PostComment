@@ -43,7 +43,7 @@ public class CommentDAO {
         }
 
         Comment currentComment = optionalComment.get();
-        currentComment.setTitle(newComment.getTitle());
+        currentComment.setName(newComment.getName());
         currentComment.setBody(newComment.getBody());
 
         this.commentRepository.save(currentComment);
@@ -59,7 +59,7 @@ public class CommentDAO {
         }
 
         Comment currentComment = optionalComment.get();
-        currentComment.setTitle(updatedComment.getTitle());
+        currentComment.setName(updatedComment.getName());
         currentComment.setBody(updatedComment.getBody());
 
         this.commentRepository.save(currentComment);

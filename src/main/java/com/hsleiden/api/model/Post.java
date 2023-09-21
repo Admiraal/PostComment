@@ -11,7 +11,6 @@ import java.util.Set;
 @Table(name = "post")
 public class Post {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
